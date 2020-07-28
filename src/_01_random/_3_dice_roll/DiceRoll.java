@@ -1,6 +1,6 @@
 //    Copyright (c) The League of Amazing Programmers 2013-2019
 //    Level 0
-Random ran = new Random();
+
 package _01_random._3_dice_roll;
 
 import java.awt.Dimension;
@@ -33,6 +33,7 @@ public class DiceRoll {
 	}
 	
 	public void run() {
+		Random ran = new Random();
 		try {
 			oneImg = new ImageIcon(getClass().getResource("dice 1.png"));
 			twoImg = new ImageIcon(getClass().getResource("dice 2.png"));
@@ -53,15 +54,15 @@ public class DiceRoll {
 			int randomChoice = ran.nextInt(6) + 1;
 
 			// 2. Fix the code below so that it displays the correct image
-			if (randomChoice == 0) {
+			if (randomChoice == 1) {
 				label.setIcon(oneImg);
-			} else if (randomChoice == 0) {
+			} else if (randomChoice == 2) {
 				label.setIcon(twoImg);
-			} else if (randomChoice == 0) {
+			} else if (randomChoice == 3) {
 				label.setIcon(threeImg);
-			} else if (randomChoice == 0) {
+			} else if (randomChoice == 4) {
 				label.setIcon(fourImg);
-			} else if (randomChoice == 0) {
+			} else if (randomChoice == 5) {
 				label.setIcon(fiveImg);
 			} else {
 				label.setIcon(sixImg);
