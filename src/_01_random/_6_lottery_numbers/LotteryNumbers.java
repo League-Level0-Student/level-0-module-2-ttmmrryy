@@ -7,17 +7,23 @@ import javax.swing.JOptionPane;
 public class LotteryNumbers {
 	public static void main(String[] args) {
 		Random ran1 = new Random();
-		Random ran2 = new Random();
-		Random ran3 = new Random();
-		Random ran4 = new Random();
-		Random ran5 = new Random();
-		Random ran6 = new Random();
 		
-		int randomNumber1 = ran1.nextInt(90) + 10;
-		int randomNumber2 = ran2.nextInt(90) + 10;
-		int randomNumber3 = ran3.nextInt(90) + 10;
-		int randomNumber4 = ran4.nextInt(90) + 10;
-		int randomNumber5 = ran5.nextInt(90) + 10;
-		int randomNumber6 = ran6.nextInt(90) + 10;
+		String lotto = "";
+		
+		for (int i = 0; i < 6; i++) {
+			
+			int randomNumber1 = ran1.nextInt(90) + 10;
+			lotto += randomNumber1;
+			lotto += " ";
+			
+//			int randomNumber2 = ran1.nextInt(90) + 10;
+//			int randomNumber3 = ran1.nextInt(90) + 10;
+//			int randomNumber4 = ran1.nextInt(90) + 10;
+//			int randomNumber5 = ran1.nextInt(90) + 10;
+//			int randomNumber6 = ran1.nextInt(90) + 10;
+		
+		}
+		
+		JOptionPane.showMessageDialog(null, "Your lottery number is: " + lotto, "LOTTO", JOptionPane.INFORMATION_MESSAGE);
 	}
 }
