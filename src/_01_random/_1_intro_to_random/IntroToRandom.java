@@ -5,6 +5,7 @@ package _01_random._1_intro_to_random;
 
 import java.util.Random;
 
+
 public class IntroToRandom {
 	public static void main(String[] args) {
 		
